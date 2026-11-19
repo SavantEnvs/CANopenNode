@@ -1,0 +1,9 @@
+project: savantenvs/CANopenNode
+target: lss_master
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lss_master/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_lss_master
+    libfuzzer: true
+    timeout: 10

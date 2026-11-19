@@ -1,0 +1,9 @@
+project: savantenvs/CANopenNode
+target: sdo_client
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sdo_client/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_sdo_client
+    libfuzzer: true
+    timeout: 10

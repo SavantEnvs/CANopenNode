@@ -1,0 +1,8 @@
+[1] lss_switch_glob 1
+[2] lss_set_node 5
+[3] lss_conf_bitrate 0 2
+[4] lss_activate_bitrate 1000
+[5] lss_store
+[6] lss_inquire_addr
+[7] lss_get_node
+[8] lss_switch_glob 0

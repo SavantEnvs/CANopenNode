@@ -1,0 +1,9 @@
+project: savantenvs/CANopenNode
+target: gateway_ascii
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gateway_ascii/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gateway_ascii
+    libfuzzer: true
+    timeout: 10

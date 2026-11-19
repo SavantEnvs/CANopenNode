@@ -1,0 +1,2 @@
+# Build outputs of mayhem/build.sh (objects, fuzz harness and self-test binaries).
+/out/
